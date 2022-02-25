@@ -55,3 +55,7 @@ button{
 pre code{
     font-size: 25px;
 }
+
+input, label{
+    font-size: 30px;
+}
