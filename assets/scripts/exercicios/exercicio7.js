@@ -4,7 +4,7 @@ function showresults(){
     document.getElementById('resposta').classList.remove('hidden')
     
     
-    if(altura || peso < 0){
+    if(altura < 0 || peso < 0){
         document.getElementById('resposta').innerHTML = "Informe dados válidos"  //Verifica a entrada de dados.
     }else{
             if(altura > 3){

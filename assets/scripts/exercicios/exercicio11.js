@@ -1,9 +1,4 @@
 var n100, r100, n50, r50, n20, r20, n10, r10;
-
-function isInt(value) {
-    var x = parseFloat(value);
-    return !isNaN(value) && (x | 0) === x;
-  }
 function showresults(){
     document.getElementById('resposta').innerHTML = ""
     document.getElementById("resposta").classList.remove("hidden");
@@ -12,7 +7,7 @@ function showresults(){
     r100 = saque%100;
 
     n50 = r100/50;
-    r50 = r100%50;
+    r50 = r100%50;   //separa as notas
 
     r20 = r50%20;
     n20 = r50/20;
@@ -21,7 +16,7 @@ function showresults(){
     r10 = r20%10;
     
     if(n100 != 0){
-        document.getElementById('resposta').innerHTML += Math.floor(n100)+" notas de 100 <br>"
+        document.getElementById('resposta').innerHTML += Math.floor(n100)+" notas de 100 <br>" //arredonda o valor das notas e mostra a quantidade
     }
     if(n50 != 0){
         document.getElementById('resposta').innerHTML += Math.floor(n50)+" notas de 50 <br>"
