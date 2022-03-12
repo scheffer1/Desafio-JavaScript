@@ -1,1 +1,1 @@
-*.html .gitattributes
+*.html linguist-detectable=false
